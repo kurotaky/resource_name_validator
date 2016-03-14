@@ -31,8 +31,8 @@ end
 
 ## Examples
 ```sh
-irb(main):001:0> Rails.application.routes.routes.collect {|r| r.path.spec.to_s }.include? '/admin(.:format)'
-=> false
+Rails.application.routes.routes.collect {|r| r.path.spec.to_s }.include? '/admin(.:format)'
+#=> true
 
 user = User.new(name: 'admin')
 user.valid? #=> false
