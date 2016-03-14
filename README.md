@@ -1,5 +1,6 @@
 # ResourceNameValidator
 [![Build Status](https://travis-ci.org/kurotaky/resource_name_validator.svg?branch=master)](https://travis-ci.org/kurotaky/resource_name_validator)
+[![Gem](https://img.shields.io/gem/v/resource_name_validator.svg?style=flat-square)](https://rubygems.org/gems/resource_name_validator)
 
 defined resources validator for Rails Application.
 validate name in accordance with current defined resources.
