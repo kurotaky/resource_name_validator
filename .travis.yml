@@ -1,4 +1,8 @@
 language: ruby
 rvm:
   - 2.3.0
+  - ruby-head
 before_install: gem install bundler -v 1.11.2
+notifications:
+  slack:
+    secure: oi2znBMDFGCtwQ3UlNmq7azSWq6Cn+u/bAe85hQ9JVC+Npku7JU2R+WZsLggEtJBwev2o1tRnInTLYcVQdRfwt9OQVdtH0FmO1SUt68YUJVh/ukFHYLrxJJBPXK2bIhvMPVJsmzpVp9DOIIXjwXZaxjtOpjKdIKr4MxippqQ+hweJtbERL0VzzPgld2mw5ZAbYjaXKhcpJjTzAtYUoPPiurBqMeufrXtQWLelDeqrIY2+QCgXxioUc1V3SSmHwvIQU60P98335aG+h/jPcTTaLApYiXZx68Lsdg3XRdgrKJ9S91+Lwqd1ufV3IQw+q+42aZPaNHH5mOCAdWCIzliAVD3WJ6LWg47evlkYMKHVK0eh3gVX3YmygDQPgRd1KUTN0pePEzq8bFKM2ogkaI3h4swXnDEt36MdWU1BQFFYn8CVwYYdtUha73f0icL1A+8ONEO/WxaMgGIWixIZJ2ENdpKJsy5Jq5c1UvO2tlT+O2imCXwgD4BCKZE1FTiv3W//WSk9/3xgBWr8FfqZ1fPtMpwp0z5A9qX7YaJK1J/SR7mndg8XmV0hEvXFiJSEnf0tbRhyXUb5CZ++VvhsE3BBL4mzdJa+wsR3FepYOg4BL4KLRjf+A+EJ69Cpo77oMv7ZVFc5394RZMKyiHxJEoESc8jRj9ahxl40t0qJ32vyNI=
