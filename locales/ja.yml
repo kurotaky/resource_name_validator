@@ -1,0 +1,4 @@
+ja:
+  errors:
+    messages:
+      is_reserved: 'は利用できません。'

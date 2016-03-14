@@ -1,0 +1,4 @@
+en:
+  errors:
+    messages:
+      is_reserved: 'is unavailable.'
