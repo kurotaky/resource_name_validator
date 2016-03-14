@@ -1,8 +1,6 @@
 # ResourceNameValidator
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/resource_name_validator`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+defined resources validator for Rails Application.
+validate name in accordance with current defined resources.
 
 ## Installation
 
@@ -22,7 +20,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# app/models/user.rb
+class User < ActiveRecord::Base
+  validates :name, resource_name: true
+end
+```
+
+## Examples
+```sh
+irb(main):001:0> Rails.application.routes.routes.collect {|r| r.path.spec.to_s }.include? '/admin(.:format)'
+=> false
+
+user = User.new(name: 'admin')
+user.valid? #=> false
+```
+
 
 ## Development
 
@@ -32,5 +45,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/resource_name_validator.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/kurotaky/resource_name_validator.
